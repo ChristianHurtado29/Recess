@@ -21,6 +21,7 @@ class TableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .systemTeal
         loadData()
         tableView.dataSource = self
         tableView.delegate = self

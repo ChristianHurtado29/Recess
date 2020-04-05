@@ -18,7 +18,7 @@ static let allMeditations: [Meditation] = [
     Meditation(title: "Ryan Part1",
                author: "Ryan Dooley",
                duration: "5:02",
-               description: "Ryan tests the calming effects of meditations"),
+               description: "Ryan tests the calming effects of meditations, more descriptive text. more descriptive text. more descriptive text. more descriptive text."),
     Meditation(title: "Victor Part1",
                author: "Victor Goode",
                duration: "9:46",
