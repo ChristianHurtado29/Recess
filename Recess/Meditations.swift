@@ -11,17 +11,17 @@ import Foundation
 struct Meditation{
     let title: String
     let author: String
-    let duration: Double
+    let duration: String
     let description: String
 
 static let allMeditations: [Meditation] = [
-    Meditation(title: "Ryan pt.1",
+    Meditation(title: "Ryan Part1",
                author: "Ryan Dooley",
-               duration: 4.57,
+               duration: "5:02",
                description: "Ryan tests the calming effects of meditations"),
-    Meditation(title: "",
-               author: "",
-               duration: 5.03,
-               description: "")
+    Meditation(title: "Victor Part1",
+               author: "Victor Goode",
+               duration: "9:46",
+               description: "test")
     ]
 }

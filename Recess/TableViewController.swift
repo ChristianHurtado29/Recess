@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 class TableViewController: UIViewController {
-    
+
     @IBOutlet weak var tableView: UITableView!
     
     var meditations = [Meditation](){
@@ -21,12 +21,19 @@ class TableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadData()
         tableView.dataSource = self
         tableView.delegate = self
-        loadData()
     }
 
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailedViewController = segue.destination as? DetailedViewController,
+            let indexPath = tableView.indexPathForSelectedRow else{
+                fatalError("missed cell!")
+        }
+        let meditation = meditations[indexPath.row]
+        detailedViewController.meditation = meditation
+    }
     
     
     func loadData(){
@@ -41,7 +48,7 @@ extension TableViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "meditationCell", for: indexPath) as? MeditationCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MeditationCell", for: indexPath) as? MeditationCell else {
             fatalError("could not downcast to MeditationCell")
         }
         let selMeditation = meditations[indexPath.row]

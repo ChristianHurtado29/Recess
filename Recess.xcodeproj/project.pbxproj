@@ -16,6 +16,9 @@
 		137AD0062439B8E9005C637D /* Meditations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137AD0052439B8E9005C637D /* Meditations.swift */; };
 		137AD00A2439BC04005C637D /* MeditationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137AD0092439BC04005C637D /* MeditationCell.swift */; };
 		137AD00C2439BE60005C637D /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137AD00B2439BE60005C637D /* DetailedViewController.swift */; };
+		137AD00E2439C549005C637D /* Ryan Part1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 137AD00D2439C549005C637D /* Ryan Part1.mp3 */; };
+		137AD0122439C5B7005C637D /* Victor Part1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 137AD0112439C5B7005C637D /* Victor Part1.mp3 */; };
+		137AD0142439CB2B005C637D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137AD0132439CB2B005C637D /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		137AD0052439B8E9005C637D /* Meditations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditations.swift; sourceTree = "<group>"; };
 		137AD0092439BC04005C637D /* MeditationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationCell.swift; sourceTree = "<group>"; };
 		137AD00B2439BE60005C637D /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
+		137AD00D2439C549005C637D /* Ryan Part1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ryan Part1.mp3"; sourceTree = "<group>"; };
+		137AD0112439C5B7005C637D /* Victor Part1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Victor Part1.mp3"; sourceTree = "<group>"; };
+		137AD0132439CB2B005C637D /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +68,12 @@
 		137ACFF02439AC2E005C637D /* Recess */ = {
 			isa = PBXGroup;
 			children = (
+				137AD00D2439C549005C637D /* Ryan Part1.mp3 */,
+				137AD0112439C5B7005C637D /* Victor Part1.mp3 */,
 				137ACFF12439AC2E005C637D /* AppDelegate.swift */,
 				137ACFF32439AC2E005C637D /* SceneDelegate.swift */,
 				137AD0052439B8E9005C637D /* Meditations.swift */,
+				137AD0132439CB2B005C637D /* WelcomeViewController.swift */,
 				137ACFF52439AC2E005C637D /* TableViewController.swift */,
 				137AD00B2439BE60005C637D /* DetailedViewController.swift */,
 				137ACFF72439AC2E005C637D /* Main.storyboard */,
@@ -134,8 +143,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				137AD00E2439C549005C637D /* Ryan Part1.mp3 in Resources */,
 				137ACFFE2439AC33005C637D /* LaunchScreen.storyboard in Resources */,
 				137ACFFB2439AC33005C637D /* Assets.xcassets in Resources */,
+				137AD0122439C5B7005C637D /* Victor Part1.mp3 in Resources */,
 				137ACFF92439AC2E005C637D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +164,7 @@
 				137ACFF22439AC2E005C637D /* AppDelegate.swift in Sources */,
 				137ACFF42439AC2E005C637D /* SceneDelegate.swift in Sources */,
 				137AD00A2439BC04005C637D /* MeditationCell.swift in Sources */,
+				137AD0142439CB2B005C637D /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

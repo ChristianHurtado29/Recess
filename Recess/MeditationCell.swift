@@ -14,7 +14,7 @@ class MeditationCell: UITableViewCell {
     @IBOutlet weak var authorLabel: UILabel!
     
     func configureCell (for meditation: Meditation){
-        titleLabel.text = "\(meditation.title)(\(meditation.duration))"
+        titleLabel.text = "\(meditation.title) (\(meditation.duration))"
         authorLabel.text = "By: \(meditation.author)"
     }
     
